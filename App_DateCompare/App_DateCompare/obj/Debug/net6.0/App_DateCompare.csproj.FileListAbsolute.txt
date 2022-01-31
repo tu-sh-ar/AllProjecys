@@ -1,0 +1,15 @@
+D:\DotNet__Tushar\App_DateCompare\App_DateCompare\bin\Debug\net6.0\App_DateCompare.exe
+D:\DotNet__Tushar\App_DateCompare\App_DateCompare\bin\Debug\net6.0\App_DateCompare.deps.json
+D:\DotNet__Tushar\App_DateCompare\App_DateCompare\bin\Debug\net6.0\App_DateCompare.runtimeconfig.json
+D:\DotNet__Tushar\App_DateCompare\App_DateCompare\bin\Debug\net6.0\App_DateCompare.dll
+D:\DotNet__Tushar\App_DateCompare\App_DateCompare\bin\Debug\net6.0\ref\App_DateCompare.dll
+D:\DotNet__Tushar\App_DateCompare\App_DateCompare\bin\Debug\net6.0\App_DateCompare.pdb
+D:\DotNet__Tushar\App_DateCompare\App_DateCompare\obj\Debug\net6.0\App_DateCompare.csproj.AssemblyReference.cache
+D:\DotNet__Tushar\App_DateCompare\App_DateCompare\obj\Debug\net6.0\App_DateCompare.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet__Tushar\App_DateCompare\App_DateCompare\obj\Debug\net6.0\App_DateCompare.AssemblyInfoInputs.cache
+D:\DotNet__Tushar\App_DateCompare\App_DateCompare\obj\Debug\net6.0\App_DateCompare.AssemblyInfo.cs
+D:\DotNet__Tushar\App_DateCompare\App_DateCompare\obj\Debug\net6.0\App_DateCompare.csproj.CoreCompileInputs.cache
+D:\DotNet__Tushar\App_DateCompare\App_DateCompare\obj\Debug\net6.0\App_DateCompare.dll
+D:\DotNet__Tushar\App_DateCompare\App_DateCompare\obj\Debug\net6.0\ref\App_DateCompare.dll
+D:\DotNet__Tushar\App_DateCompare\App_DateCompare\obj\Debug\net6.0\App_DateCompare.pdb
+D:\DotNet__Tushar\App_DateCompare\App_DateCompare\obj\Debug\net6.0\App_DateCompare.genruntimeconfig.cache

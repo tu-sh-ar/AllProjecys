@@ -1,0 +1,15 @@
+D:\C# TUTORIAL\DAY1_DEMO\DAY1_DEMO\bin\Release\net6.0\DAY1_DEMO.exe
+D:\C# TUTORIAL\DAY1_DEMO\DAY1_DEMO\bin\Release\net6.0\DAY1_DEMO.deps.json
+D:\C# TUTORIAL\DAY1_DEMO\DAY1_DEMO\bin\Release\net6.0\DAY1_DEMO.runtimeconfig.json
+D:\C# TUTORIAL\DAY1_DEMO\DAY1_DEMO\bin\Release\net6.0\DAY1_DEMO.dll
+D:\C# TUTORIAL\DAY1_DEMO\DAY1_DEMO\bin\Release\net6.0\ref\DAY1_DEMO.dll
+D:\C# TUTORIAL\DAY1_DEMO\DAY1_DEMO\bin\Release\net6.0\DAY1_DEMO.pdb
+D:\C# TUTORIAL\DAY1_DEMO\DAY1_DEMO\obj\Release\net6.0\DAY1_DEMO.csproj.AssemblyReference.cache
+D:\C# TUTORIAL\DAY1_DEMO\DAY1_DEMO\obj\Release\net6.0\DAY1_DEMO.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# TUTORIAL\DAY1_DEMO\DAY1_DEMO\obj\Release\net6.0\DAY1_DEMO.AssemblyInfoInputs.cache
+D:\C# TUTORIAL\DAY1_DEMO\DAY1_DEMO\obj\Release\net6.0\DAY1_DEMO.AssemblyInfo.cs
+D:\C# TUTORIAL\DAY1_DEMO\DAY1_DEMO\obj\Release\net6.0\DAY1_DEMO.csproj.CoreCompileInputs.cache
+D:\C# TUTORIAL\DAY1_DEMO\DAY1_DEMO\obj\Release\net6.0\DAY1_DEMO.dll
+D:\C# TUTORIAL\DAY1_DEMO\DAY1_DEMO\obj\Release\net6.0\ref\DAY1_DEMO.dll
+D:\C# TUTORIAL\DAY1_DEMO\DAY1_DEMO\obj\Release\net6.0\DAY1_DEMO.pdb
+D:\C# TUTORIAL\DAY1_DEMO\DAY1_DEMO\obj\Release\net6.0\DAY1_DEMO.genruntimeconfig.cache
