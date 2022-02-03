@@ -7,9 +7,11 @@ namespace API_BasicAuthentication.Model
     public class UserContext:DbContext
     {
         public DbSet<UserRecord> userRecords { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-SI2PJCE;Database=UserAuthDb;Trusted_Connection=True;");
+            //optionsBuilder.UseSqlServer()
         }
+
     }
 }

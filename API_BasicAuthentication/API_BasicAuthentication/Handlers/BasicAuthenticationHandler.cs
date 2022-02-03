@@ -35,7 +35,7 @@ namespace API_BasicAuthentication.Handlers
                 string userName = credentials[0];
                 string password = credentials[1];
 
-                UserRecord user = (UserRecord)_context.userRecords.Where(user => user.UserName == userName && user.Password == password).FirstOrDefault();
+                //UserRecord user = (UserRecord)_context.userRecords.Where(user => user.UserName == userName && user.Password == password).FirstOrDefault();
 
             }
             catch (Exception ex)
