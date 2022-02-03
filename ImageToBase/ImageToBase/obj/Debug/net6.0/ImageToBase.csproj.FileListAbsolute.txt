@@ -1,0 +1,17 @@
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\bin\Debug\net6.0\ImageToBase.exe
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\bin\Debug\net6.0\ImageToBase.deps.json
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\bin\Debug\net6.0\ImageToBase.runtimeconfig.json
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\bin\Debug\net6.0\ImageToBase.dll
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\bin\Debug\net6.0\ref\ImageToBase.dll
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\bin\Debug\net6.0\ImageToBase.pdb
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\obj\Debug\net6.0\ImageToBase.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\obj\Debug\net6.0\ImageToBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\obj\Debug\net6.0\ImageToBase.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\obj\Debug\net6.0\ImageToBase.AssemblyInfo.cs
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\obj\Debug\net6.0\ImageToBase.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\obj\Debug\net6.0\ImageToBase.dll
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\obj\Debug\net6.0\ref\ImageToBase.dll
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\obj\Debug\net6.0\ImageToBase.pdb
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\obj\Debug\net6.0\ImageToBase.genruntimeconfig.cache
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\PC\source\repos\AllProjecys\ImageToBase\ImageToBase\obj\Debug\net6.0\ImageToBase.csproj.CopyComplete
