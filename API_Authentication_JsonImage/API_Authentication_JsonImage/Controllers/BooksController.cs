@@ -24,11 +24,12 @@ namespace API_Authentication_JsonImage.Controllers
             return await _bookRepository.Get(id);
         }
 
-        [HttpGet("image/{Id}")] //identifies HttpGet methods
+        [HttpGet("image/{Id}")] //identifies HttpGet For Image methods
         public async Task<ActionResult<UploadCustomerImageModel>> GetImage(int Id)// id is a URI
         {
             return await _bookRepository.GetImg(Id);
         }
+
 
         [HttpPost("")] //identifies HttpPost methods
         public async Task<ActionResult<Books>> PostBooks([FromBody]Books book)//from body bindes using request body

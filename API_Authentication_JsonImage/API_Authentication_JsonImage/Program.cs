@@ -25,6 +25,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();//Adds middleware to redirect http to https
 
+
+
 app.UseAuthorization();//Routing Concept
 
 app.MapControllers();

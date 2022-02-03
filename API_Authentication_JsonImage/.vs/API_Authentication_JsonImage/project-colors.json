@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "61045d3e-2239-49da-9841-b3b7d28e961b": {
+      "ProjectGuid": "61045d3e-2239-49da-9841-b3b7d28e961b",
+      "DisplayName": "API_Authentication_JsonImage",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

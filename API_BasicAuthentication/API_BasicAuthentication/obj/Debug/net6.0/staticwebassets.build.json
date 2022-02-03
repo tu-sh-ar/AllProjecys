@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VEbIFztatmnpAdKgiRGyvAIWJ+iWxgvh0MMPZTRPh44=",
+  "Source": "API_BasicAuthentication",
+  "BasePath": "_content/API_BasicAuthentication",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
