@@ -53,3 +53,4 @@ C:\Users\PC\source\repos\AllProjecys\API_BasicAuthentication\API_BasicAuthentica
 C:\Users\PC\source\repos\AllProjecys\API_BasicAuthentication\API_BasicAuthentication\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\PC\source\repos\AllProjecys\API_BasicAuthentication\API_BasicAuthentication\obj\Debug\net6.0\API_BasicAuthentication.csproj.CopyComplete
 C:\Users\PC\source\repos\AllProjecys\API_BasicAuthentication\API_BasicAuthentication\obj\Debug\net6.0\API_BasicAuthentication.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\AllProjecys\API_BasicAuthentication\API_BasicAuthentication\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

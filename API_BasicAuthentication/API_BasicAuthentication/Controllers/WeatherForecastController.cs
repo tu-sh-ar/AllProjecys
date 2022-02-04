@@ -1,23 +1,30 @@
+using API_BasicAuthentication.Model;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Text;
+using System.Security.Claims;
+using API_BasicAuthentication.NewFolder;
 
 namespace API_BasicAuthentication.Controllers
 {
-    [Authorize]
-
-    
+    [Authorize]  
     public class WeatherForecastController : ControllerBase
     {
+        private readonly JWTSettings _jwtSettings;
+        private readonly UserContext userContext;
+        public WeatherForecastController(IOptions<JWTSettings> jwtsettings)
+        {
+            _jwtSettings = jwtsettings.Value;
+        }
         private static readonly string[] Summaries = new[]
         {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
-
-
-
-
-        [HttpGet("")]
+        [HttpGet("Get")]
         public IEnumerable<WeatherForecast> Get()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
@@ -27,6 +34,32 @@ namespace API_BasicAuthentication.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+
+        }
+        [HttpGet("Login")]
+        public async Task<ActionResult<UserRecord>> Login([FromBody] UserRecord user)
+        {
+            UserRecord userWithToken = new UserRecord() ;
+            userWithToken.UserName = user.UserName;
+            userWithToken.Password = user.Password;
+            
+            user = userContext.userRecords.Where(u => u.UserName == user.UserName && user.Password == u.Password).FirstOrDefault();
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_jwtSettings.SecretKey);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.Name, user.UserName)
+                }),
+                Expires = DateTime.UtcNow.AddMonths(3),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256)
+
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            userWithToken.Token = tokenHandler.WriteToken(token);
+
+            return user;
         }
     }
 }
