@@ -10,7 +10,7 @@ using API_BasicAuthentication.NewFolder;
 
 namespace API_BasicAuthentication.Controllers
 {
-    [Authorize]  
+    
     public class WeatherForecastController : ControllerBase
     {
         private readonly JWTSettings _jwtSettings;
@@ -25,7 +25,7 @@ namespace API_BasicAuthentication.Controllers
         {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
-
+        [Authorize]
         [HttpGet("Get")]
         public IEnumerable<WeatherForecast> Get()
         {
