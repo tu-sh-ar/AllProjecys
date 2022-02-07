@@ -45,6 +45,8 @@ namespace API_BasicAuthentication.Handlers
 
                 else
                 {
+                    // claims are pieces of information asserted about a subject. For example, an ID token (which is always a JWT) can contain a claim called name that asserts that the name
+                    // of the user authenticating is "John Doe". In a JWT, a claim appears as a name/value pair where the name is always a string and the value can be any JSON value
                     var claims = new[] { new Claim(ClaimTypes.Name, user.UserName) };
                     var identity = new ClaimsIdentity(claims,Scheme.Name);
                     var principle = new ClaimsPrincipal(identity);

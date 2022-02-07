@@ -14,10 +14,12 @@ namespace API_BasicAuthentication.Controllers
     public class WeatherForecastController : ControllerBase
     {
         private readonly JWTSettings _jwtSettings;
-        private readonly UserContext userContext;
-        public WeatherForecastController(IOptions<JWTSettings> jwtsettings)
+        private UserContext _userContext;
+       
+        public WeatherForecastController(IOptions<JWTSettings> jwtsettings,UserContext userContext)
         {
             _jwtSettings = jwtsettings.Value;
+            _userContext = userContext;
         }
         private static readonly string[] Summaries = new[]
         {
@@ -37,13 +39,18 @@ namespace API_BasicAuthentication.Controllers
 
         }
         [HttpGet("Login")]
-        public async Task<ActionResult<UserRecord>> Login([FromBody] UserRecord user)
+        public async Task<ActionResult<UserRecord>> Login([FromBody]UserRecord user)
         {
+            
             UserRecord userWithToken = new UserRecord() ;
+            if (user == null)
+            {
+                return BadRequest("User is null");
+            }
             userWithToken.UserName = user.UserName;
             userWithToken.Password = user.Password;
             
-            user = userContext.userRecords.Where(u => u.UserName == user.UserName && user.Password == u.Password).FirstOrDefault();
+            user = _userContext.userRecords.Where(u => u.UserName == user.UserName && user.Password == u.Password).FirstOrDefault();
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_jwtSettings.SecretKey);
             var tokenDescriptor = new SecurityTokenDescriptor
@@ -53,13 +60,13 @@ namespace API_BasicAuthentication.Controllers
                     new Claim(ClaimTypes.Name, user.UserName)
                 }),
                 Expires = DateTime.UtcNow.AddMonths(3),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256)
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
 
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
             userWithToken.Token = tokenHandler.WriteToken(token);
 
-            return user;
+            return userWithToken;
         }
     }
 }

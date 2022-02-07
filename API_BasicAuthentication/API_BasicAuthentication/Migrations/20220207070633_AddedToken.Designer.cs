@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API_BasicAuthentication.Migrations
 {
     [DbContext(typeof(UserContext))]
-    [Migration("20220203113422_UserDbcreated")]
-    partial class UserDbcreated
+    [Migration("20220207070633_AddedToken")]
+    partial class AddedToken
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -22,6 +22,24 @@ namespace API_BasicAuthentication.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("API_BasicAuthentication.NewFolder.UserRecord", b =>
+                {
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Token")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserName");
+
+                    b.ToTable("userRecords");
+                });
 #pragma warning restore 612, 618
         }
     }

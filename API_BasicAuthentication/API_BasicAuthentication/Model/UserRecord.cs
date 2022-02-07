@@ -6,7 +6,8 @@ namespace API_BasicAuthentication.NewFolder
     {
         [Key]
         public string UserName { get; set; }
-        public string Token { get; set; }
+        
+        public string Token { get; set; } 
         public string Password { get; set; }
     }
 }

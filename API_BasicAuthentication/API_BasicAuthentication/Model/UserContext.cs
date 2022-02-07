@@ -9,14 +9,9 @@ namespace API_BasicAuthentication.Model
         public UserContext(DbContextOptions<UserContext> options):base(options)
         {
             
+            
         }
         public DbSet<UserRecord> userRecords { get; set; }
-        
-
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer(@"Server=DESKTOP-SI2PJCE;Database=UserAuthDb;Trusted_Connection=True;");
-        //}
 
     }
 }

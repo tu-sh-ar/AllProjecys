@@ -4,7 +4,7 @@
 
 namespace API_BasicAuthentication.Migrations
 {
-    public partial class UserDbcreate : Migration
+    public partial class AddedToken : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,7 +13,8 @@ namespace API_BasicAuthentication.Migrations
                 columns: table => new
                 {
                     UserName = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Token = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
