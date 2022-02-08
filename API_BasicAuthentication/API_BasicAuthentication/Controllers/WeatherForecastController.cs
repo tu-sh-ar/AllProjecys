@@ -10,16 +10,18 @@ using API_BasicAuthentication.NewFolder;
 
 namespace API_BasicAuthentication.Controllers
 {
-    
+   
     public class WeatherForecastController : ControllerBase
     {
         private readonly JWTSettings _jwtSettings;
         private UserContext _userContext;
+        private UserContext _userDbContext;
        
         public WeatherForecastController(IOptions<JWTSettings> jwtsettings,UserContext userContext)
         {
             _jwtSettings = jwtsettings.Value;
             _userContext = userContext;
+            
         }
         private static readonly string[] Summaries = new[]
         {
@@ -65,8 +67,10 @@ namespace API_BasicAuthentication.Controllers
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
             userWithToken.Token = tokenHandler.WriteToken(token);
-
+            
+            
             return userWithToken;
         }
+        
     }
 }
